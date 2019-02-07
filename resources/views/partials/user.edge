@@ -1,0 +1,11 @@
+<div>
+        
+        @loggedIn
+        You are logged in!
+        <a href="{{ route('UserController.show', { id: 1 }) }}">
+            View profile
+        </a>
+        @else
+        <a href="/login">Click here</a> to login.
+        @endloggedIn
+    </div>

@@ -17,3 +17,7 @@
 const Route = use('Route')
 
 Route.on('/').render('welcome')
+
+Route.get('hello-world', ({ view }) => {
+    return view.render('hello-world')
+})
