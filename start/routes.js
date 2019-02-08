@@ -17,6 +17,10 @@
 const Route = use('Route')
 
 Route.on('/').render('welcome')
+Route.get('api/v1/users', 'UserController.index')
+
+
+//Route.get('posts', 'PostController.index')
 
 Route.get('hello-world', ({ view }) => {
     return view.render('hello-world')
